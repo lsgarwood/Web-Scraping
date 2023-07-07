@@ -7,5 +7,6 @@
 - if we use the url and print it - all the html
 - again we want an instance of beautiful we can call it soup again, taking in html_text and the lxml library for parsing
 - in a variable called jobs we want to find_all of the job listings on the page (soup)
+- filter on location
 - for each job in the list i want to find the location, and if that location is 'London' then find the salary and print a list of those job locations and salaries
 - use an f string to make it pretty

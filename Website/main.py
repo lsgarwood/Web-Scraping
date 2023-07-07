@@ -10,10 +10,8 @@ jobs = soup.find_all('li', class_= 'lister__item cf lister__item--display-logo-i
 
 for job in jobs:
     location = job.find('li', class_='lister__meta-item lister__meta-item--location').text
-    # print(job_location)
     if 'London' in location:
         salary = job.find('li', class_='lister__meta-item lister__meta-item--salary').text
-        # print(job_salary)
         print(f'''
             Job Location: {location}
             Salary: {salary}
