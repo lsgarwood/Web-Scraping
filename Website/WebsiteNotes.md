@@ -1,0 +1,11 @@
+- Pull the latest job adverts from a specific website
+- we need request libraray installed
+- we will use .get from reuests to get info from the site
+- we will use an empty string until we have the url
+- go to the timesjobs.com and search for python jobs
+- then copy and paste that url to scrape against, and we will only want the most upto date jobs posted 'a few days ago'
+- if we use the url and print it - all the html
+- again we want an instance of beautiful we can call it soup again, taking in html_text and the lxml library for parsing
+- in a variable called jobs we want to find_all of the job listings on the page (soup)
+- for each job in the list i want to find the location, and if that location is 'London' then find the salary and print a list of those job locations and salaries
+- use an f string to make it pretty
