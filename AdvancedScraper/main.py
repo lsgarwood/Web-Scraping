@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 #  import time
 
-
 # def find_jobs():
 
 html_text = requests.get('https://appointments.thetimes.co.uk/jobs/?Keywords=python#browsing').text
