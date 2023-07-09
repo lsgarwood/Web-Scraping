@@ -22,6 +22,7 @@ for index, job in enumerate(jobs):
             f.write(f'More Info: {more_info}')
         print(f'File saved: {index}')
 
+# To put in a repeat timer
 # if __name__ == '__main__':
 #     while true:
 #         find_jobs()
