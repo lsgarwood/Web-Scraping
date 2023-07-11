@@ -1,5 +1,6 @@
-import sys
+import argparse
 import re
+import sys
 from bs4 import BeautifulSoup
 from collections import Counter
 from urllib.request import urlopen
@@ -22,3 +23,10 @@ for url in urls:
             print('Your search term was not found')
 
     findSearchTerm(searchTerm)
+
+parser=argparse.ArgumentParser(
+    description='''My Description. And what a lovely description it is. ''',
+    epilog="""All is well that ends well.""")
+parser.add_argument('--foo', type=int, default=42, help='FOO!')
+parser.add_argument('bar', nargs='*', default=[1, 2, 3], help='BAR!')
+args=parser.parse_args()
